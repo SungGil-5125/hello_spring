@@ -36,6 +36,7 @@ public class HelloController {
     }
 
     static class Hello {
+
         private String name;
         //name이 private이기 때문에 get, set을 사용한다.
 
