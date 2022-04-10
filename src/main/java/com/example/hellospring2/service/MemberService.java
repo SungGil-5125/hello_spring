@@ -3,9 +3,7 @@ package com.example.hellospring2.service;
 import com.example.hellospring2.domain.Member;
 import com.example.hellospring2.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -19,7 +17,6 @@ public class MemberService {
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
-    //final이 무엇인가
 
     public Long join(Member member) { //이것이 바로 spring의 의존성 주입 ?
 
